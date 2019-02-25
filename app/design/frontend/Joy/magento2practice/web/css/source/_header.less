@@ -27,20 +27,23 @@ ul.header.links li:nth-child(2):before{
   width: 30px;
   height: 29px;
   position: absolute;
-
   top: 31px;
   @media (min-width:768px){
     display: none;
   }
 }
+
 ul.header.links li:nth-child(1):before{
   content: '';
   background-image: url("../images/icon_human.png");
   right: 100px;
 }
+
 ul.header.links li:nth-child(2):before {
   content: 'ok';
+  background: red;
 }
+
 @media (max-width:768px){
   .link.wishlist ,
   .authorization-link,

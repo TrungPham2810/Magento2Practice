@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d89d1ca0be9f0c8caacd88a23fe926d8",
+    "content-hash": "cf6fc5e38ef7d2c6f975b5380237ed92",
     "packages": [
         {
             "name": "amzn/amazon-pay-and-login-magento-2-module",
@@ -15398,6 +15398,54 @@
             "time": "2017-12-16T16:06:03+00:00"
         },
         {
+            "name": "honl/magento2-templatehints",
+            "version": "0.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ho-nl/magento2-Ho_Templatehints.git",
+                "reference": "18d30b539f8b52cd98992f83c7d9b17b43a7f9be"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ho-nl/magento2-Ho_Templatehints/zipball/18d30b539f8b52cd98992f83c7d9b17b43a7f9be",
+                "reference": "18d30b539f8b52cd98992f83c7d9b17b43a7f9be",
+                "shasum": ""
+            },
+            "require": {
+                "php": "~5.6.5|7.0.2|7.0.4|~7.0.6|~7.1.0"
+            },
+            "replace": {
+                "ho-nl/magento2-templatehints": "self.version"
+            },
+            "type": "magento2-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.2-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Ho\\Templatehints\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Paul Hachmang - H&O",
+                    "email": "paul@h-o.nl"
+                }
+            ],
+            "description": "H&O Magento 2 Advanced Template Hints module",
+            "homepage": "https://github.com/ho-nl/magento2-Ho_Templatehints",
+            "time": "2017-11-24T13:35:54+00:00"
+        },
+        {
             "name": "jms/metadata",
             "version": "1.7.0",
             "source": {
@@ -15773,6 +15821,49 @@
                 "testing"
             ],
             "time": "2018-10-28T11:19:53+00:00"
+        },
+        {
+            "name": "mgtcommerce/module-mgtdevelopertoolbar",
+            "version": "1.0.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mgtcommerce/Mgt_Developertoolbar.git",
+                "reference": "8df0b64d3e7df5a4e60acaea326f829ef7dd0b5e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mgtcommerce/Mgt_Developertoolbar/zipball/8df0b64d3e7df5a4e60acaea326f829ef7dd0b5e",
+                "reference": "8df0b64d3e7df5a4e60acaea326f829ef7dd0b5e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0.0"
+            },
+            "type": "magento2-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/app/code/Mgt/DeveloperToolbar/registration.php"
+                ],
+                "psr-4": {
+                    "Mgt\\DeveloperToolbar\\": "src/app/code/Mgt/DeveloperToolbar"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "description": "Mgt Developer Toolbar",
+            "homepage": "https://www.mgt-commerce.com",
+            "keywords": [
+                "magento developer toolbar",
+                "mgt developer toolbar"
+            ],
+            "time": "2018-12-07T06:39:32+00:00"
         },
         {
             "name": "moontoast/math",
