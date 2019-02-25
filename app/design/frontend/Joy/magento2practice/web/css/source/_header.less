@@ -28,6 +28,7 @@ ul.header.links li:nth-child(2):before {
   height: 22px;
   position: absolute;
   top: 36px;
+  z-index: 5;
   background-size: contain;
   @media (min-width:540px){
     top: 34px;
@@ -122,11 +123,14 @@ ul.header.links li:nth-child(2):before{
   }
 }
 .minicart-wrapper, .field.search {
+
   @media (min-width:640px){
     margin-top: 10px;
   }
 }
-
+.minicart-wrapper {
+  z-index: 5;
+}
 .field.search {
   position: relative;
 }
