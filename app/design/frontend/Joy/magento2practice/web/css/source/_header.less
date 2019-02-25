@@ -1,5 +1,5 @@
 body {
-  background-color: #fffac5;
+  background-color: #fff;
 }
 
 .header.content {
@@ -13,7 +13,8 @@ ul.header.links {
   margin: 0;
   padding: 0;
 
-  li:nth-child(1) a {
+  li:nth-child(1) a,
+  li:nth-child(2) a {
     display: none;
     @media (min-width: 768px) {
       display: block;
@@ -21,40 +22,73 @@ ul.header.links {
   }
 }
 ul.header.links li:nth-child(1):before,
-ul.header.links li:nth-child(2):before{
-
+ul.header.links li:nth-child(2):before {
   display: inline-block;
-  width: 30px;
-  height: 29px;
+  width: 22px;
+  height: 22px;
   position: absolute;
-  top: 31px;
-  @media (min-width:768px){
-    display: none;
+  top: 36px;
+  background-size: contain;
+  @media (min-width:540px){
+    top: 34px;
+    width: 26px;
+    height: 26px;
   }
+  @media (min-width:768px) {
+    position: relative;
+    top: 29px;
+  }
+  //@media (min-width:768px){
+  //  display: none;
+  //}
 }
-
-ul.header.links li:nth-child(1):before{
+ul.header.links li:nth-child(1):before {
   content: '';
   background-image: url("../images/icon_human.png");
-  right: 100px;
+  right: 66px;
+  @media (min-width:540px){
+    right: 80px;
+  }
+  @media (min-width:768px) {
+    right: 26px;
+  }
+}
+ul.header.links li:nth-child(2):before{
+  content: '';
+  right: 40px;
+  background-image: url("../images/heart.svg");
+  @media (min-width:540px){
+    right: 47px;
+  }
+  @media (min-width:768px) {
+    right: 26px;
+  }
 }
 
-ul.header.links li:nth-child(2):before {
-  content: 'ok';
-  background: red;
-}
-
-@media (max-width:768px){
-  .link.wishlist ,
+//@media (max-width:768px){
   .authorization-link,
   .item.link.compare,
-  .greet.welcome{
+  .greet.welcome,
+  ul.header.links {
     display: none;
+    @media (min-width:768px) {
+      li {
+        margin: 0 0 0 60px !important;
+      }
+    }
+    li:nth-child(6)
+    {
+      display: none;
+      @media (min-width:768px) {
+        display: inline-block;
+      }
+    }
   }
+
   li {
     list-style: none;
   }
-}
+//}
 
 //& when (@media-common = true) {
 
@@ -78,9 +112,14 @@ ul.header.links li:nth-child(2):before {
   }
 }
 
-.minicart-wrapper .action.showcart:before , .nav-toggle:before, .field.search .label:before
-{
+.minicart-wrapper .action.showcart:before ,
+.nav-toggle:before,
+.field.search .label:before {
   color: #3a3a3a;
+  transform: scale(0.8);
+  @media (min-width:540px){
+    transform: scale(1);
+  }
 }
 .minicart-wrapper, .field.search {
   @media (min-width:640px){
@@ -95,4 +134,18 @@ ul.header.links li:nth-child(2):before {
 .block-search .label {
   position: absolute;
   left: 50px;
+}
+
+
+
+
+
+
+.action.showcart {
+
+}
+
+.block-search input {
+  border: 0px solid;
+  border-bottom: 1px solid;
 }

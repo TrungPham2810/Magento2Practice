@@ -50,5 +50,17 @@ module.exports = {
             'css/styles'
         ],
         dsl: 'less'
+    },
+    magento2practice: {
+        area: 'frontend',
+        name: 'Joy/magento2practice',
+        locale: 'en_US',
+        files: [
+            'css/styles-m',
+            'css/styles-l',
+            'css/email',
+            'css/email-inline'
+        ],
+        dsl: 'less'
     }
 };
