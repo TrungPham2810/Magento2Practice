@@ -5,3 +5,9 @@
  * Date: 26/02/2019
  * Time: 10:58
  */
+?>
+<li>
+    <a <?= $this->getLinkAttributes() ?> >
+        <span class="my-account-content"> <?= $this->escapeHtml($this->getLabel()) ?> </span>
+    </a>
+</li>
