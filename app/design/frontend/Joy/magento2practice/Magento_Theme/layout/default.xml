@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="store_switcher" remove="true" />
+        <referenceBlock name="footer_links" remove="true" />
+        <referenceBlock name="copyright" remove="true" />
+        <referenceBlock name="report.bugs" remove="true" />
+
+        <referenceContainer name="footer">
+            <block class="Magento\Theme\Block\Html\Footer" name="footer-galapel" after="form.subscribe" template="Magento_Theme::footer_galapel.phtml"/>
+        </referenceContainer>
+    </body>
+</page>

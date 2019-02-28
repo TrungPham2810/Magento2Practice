@@ -1,0 +1,137 @@
+/*=======================
+Footer
+=======================*/
+
+.block.newsletter {
+  text-align: center;
+}
+
+.title-form {
+  font-size: 1.5em;
+  width: 70%;
+  margin-left: 15%;
+  line-height: 25px;
+  margin-bottom: 15px;
+}
+
+.content-email-form {
+  margin-bottom: 10px;
+}
+
+.block.newsletter .form.subscribe {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+
+  .field.newsletter {
+    width: 50%;
+
+    .control {
+      &:before {
+        content: '' !important;
+      }
+
+      input#newsletter {
+        height: 38px;
+        padding-left: 5px;
+        &:focus {
+          box-shadow: none;
+        }
+      }
+    }
+  }
+
+  .actions {
+    width: 30%!important;
+
+    button.action.subscribe.primary {
+      width: 90%;
+      padding: 10px 0;
+      background: #4894d1;
+      border: 1px solid #4894d1;
+    }
+  }
+}
+
+/*=======================
+BIZE ULASIN
+=======================*/
+.footer-box-bize {
+  background: #f4f4f4;
+
+  .title-bize {
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 600;
+    padding: 20px 0;
+  }
+
+  .contact {
+    display: flex;
+    text-align: center;
+    padding-bottom: 20px;
+    .telephone, .email-bize {
+      width: 50%;
+    }
+
+  }
+  .image-bize {
+    display: inline-block;
+    padding: 10px;
+    width: 2.5em;
+    height: 2.5em;
+    background: #e6e6e6;
+    border-radius: 50%;
+    margin-bottom: 10px;
+
+    img {
+      transform: scale(0.7);
+    }
+  }
+
+  img.image-letter {
+    margin-top: 6px;
+  }
+
+  .telephone-number, .notice-email {
+    font-size: 0.9em;
+    font-weight: 600;
+  }
+
+  .name-branch, .timework {
+    font-size: 0.8em;
+    color: #8e8e8e;
+  }
+}
+
+/*=======================
+BOX MORINFO, DROPDOWN
+=======================*/
+
+.name-dropdown {
+  width: 100%;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  font-size: 1.1em;
+  border-bottom: 1px solid red;
+  font-weight: 600;
+
+  span#sign-dropdown {
+    font-size: 1.5em;
+    float: right;
+    transform: rotateZ(270deg) translateX(6px);
+  }
+
+}
+ul.item-dropdown {
+  li {
+    padding: 10px 0;
+    margin: 0 20px !important;
+    border-bottom: 1px solid green;
+  }
+}
+
+hr {
+  margin: 0;
+}

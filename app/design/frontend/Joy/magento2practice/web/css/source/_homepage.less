@@ -1,16 +1,32 @@
-.column.main{
+.mixin(@one:21px, @two:23px, @three:28px, @four:31px) {
   @media (min-width:460px) {
-    font-size: 21px;
+    font-size: @one;
   }
   @media (min-width:540px) {
-    font-size: 23px;
+    font-size: @two;
   }
   @media (min-width:620px) {
-    font-size: 28px;
+    font-size: @three;
   }
   @media (min-width:700px) {
-    font-size: 31px;
+    font-size: @four;
   }
+}
+
+.column.main{
+  .mixin();
+  //@media (min-width:460px) {
+  //  font-size: 21px;
+  //}
+  //@media (min-width:540px) {
+  //  font-size: 23px;
+  //}
+  //@media (min-width:620px) {
+  //  font-size: 28px;
+  //}
+  //@media (min-width:700px) {
+  //  font-size: 31px;
+  //}
   p {
     margin-bottom: 0;
   }
@@ -190,15 +206,16 @@ p.content-neden {
 DIGER KATEGORILER
 =======================*/
 .block.widget.block-products-list.grid{
-  @media (min-width:460px) {
-    font-size: 18px;
-  }
-  @media (min-width:540px) {
-    font-size: 18px;
-  }
-  @media (min-width:768px) {
-    font-size: 16px;
-  }
+  .mixin(@one:18px, @two:18px, @three:18px, @four:16px);
+  //@media (min-width:460px) {
+  //  font-size: 18px;
+  //}
+  //@media (min-width:540px) {
+  //  font-size: 18px;
+  //}
+  //@media (min-width:768px) {
+  //  font-size: 16px;
+  //}
 }
 
 ol.product-items {
@@ -276,6 +293,8 @@ BLOG PRODUCT
 GALAPEL YORUMLAR
 =======================*/
 .boxs-total {
+  .mixin(@one:21px, @two:21px, @three:23px, @four:23px);
+
   overflow: scroll;
   width: 100%;
 
@@ -300,4 +319,6 @@ GALAPEL YORUMLAR
   }
 }
 
-
+.next, .previous {
+  display: none;
+}
