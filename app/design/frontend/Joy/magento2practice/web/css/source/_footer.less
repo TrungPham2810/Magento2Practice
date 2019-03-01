@@ -109,12 +109,22 @@ BIZE ULASIN
 BOX MORINFO, DROPDOWN
 =======================*/
 
+.box-moreinfo {
+  background: #f4f4f4;
+}
+.name-dropdown.change-background {
+  background: #e6e6e6;
+  color: #0070c9;
+}
+
+.change-background span#sign-dropdown {
+  transform: rotateZ(0) translateX(5px) translateY(-10px) !important;
+}
 .name-dropdown {
   width: 100%;
   padding: 10px 20px;
   box-sizing: border-box;
   font-size: 1.1em;
-  border-bottom: 1px solid red;
   font-weight: 600;
 
   span#sign-dropdown {
@@ -134,4 +144,145 @@ ul.item-dropdown {
 
 hr {
   margin: 0;
+  width: 100%;
+}
+
+
+
+/*=======================
+SELECT LOREM
+=======================*/
+
+.select-lorem {
+  display: none;
+}
+
+
+/*=======================
+SELECT COUNTRY
+=======================*/
+
+.country {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: #f4f4f4;
+  padding: 25px 0px;
+
+  .image-world {
+    width: 30%;
+  }
+
+  .country-select {
+    width: 220px;
+    margin-left: 5%;
+
+    .title-country-select {
+      font-size: 15px;
+      color: #727272;
+    }
+
+    .selected, .one-country {
+      padding: 7px 15px;
+      background: #ffffff;
+      border: 1px solid #dadada;
+
+        img {
+          width: 25px;
+          height: 17px;
+          vertical-align: middle;
+        }
+
+        span.name-country {
+          margin-left: 10px;
+          font-size: 16px;
+          vertical-align: middle;
+          font-weight: 500;
+          color: #727272;
+        }
+
+    }
+  }
+}
+ul#country-drop {
+  position: absolute;
+  width: 220px;
+  z-index: 1000;
+}
+
+.selected i.fas.fa-caret-down {
+  float: right;
+  font-size: 17px;
+  margin-top: 2px;
+  padding: 0;
+  color: #343534;
+}
+
+
+/*=======================
+TAKIP EDIN
+=======================*/
+
+.takip-edin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f4f4f4;
+  padding: 30px 0;
+
+
+}
+
+.takip-edin img {
+  width: 150px;
+  margin-left: 15px;
+}
+
+/*=======================
+PARTNER LOGO
+=======================*/
+.partner-logo-mobile {
+  display: flex;
+  justify-content: center;
+  background: #f4f4f4;
+  padding: 30px 0 15px 0;
+  @media (min-width: 768px) {
+    display:none;
+  }
+
+   img {
+    height: 1.5em;
+    padding: 10px;
+    background: #fff;
+    margin: 0 8px;
+    border: 1px solid #dadada;
+  }
+
+}
+
+.partner-logo-desktop {
+  display: none;
+  @media (min-width: 768px) {
+    display:flex;
+    justify-content: center;
+    background: #f4f4f4;
+    padding: 30px 0 15px 0;
+  }
+
+  img {
+
+  }
+}
+
+
+
+.copyright {
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  background: #f4f4f4;
+  margin: 0 !important;
+  padding-bottom: 40px;
+  color: #727272;
 }

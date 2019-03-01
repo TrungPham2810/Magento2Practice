@@ -1,3 +1,4 @@
+<?php /**@var $block \Magento\Theme\Block\Html\Footer*/ ?>
 <div class="footer-box-bize">
     <div class="title-bize">BIZE ULASIN</div>
     <div class="contact">
@@ -17,60 +18,280 @@
             <div class="notice-email">Bize mail atin</div>
         </div>
     </div>
+</div> <!-- end footer-box-bize -->
 
 
+    <div class="box-review"></div><!--  end box-review -->
 
-    <div class="box-review"></div>
 
-    <div class="box-moreinfo">
-        <div class="footer-dropdown">
-            <hr>
-            <div class="name-dropdown">YARDIM VE DESTEK <span id="sign-dropdown">&#8964;</span></div>
-            <ul class="item-dropdown">
-                <li>Sikca Sorulan Sorular</li>
-                <li>Sikca Sorulan Sorular</li>
-                <li>Sikca Sorulan Sorular</li>
-                <li>Sikca Sorulan Sorular</li>
-                <li>Sikca Sorulan Sorular</li>
-                <li>Sikca Sorulan Sorular</li>
-                <li>Sikca Sorulan Sorular</li>
-            </ul>
-            <hr>
-        </div>
-
-        <div class="footer-dropdown">
-            <hr>
-            <div class="name-dropdown">YARDIM VE DESTEK <span id="sign-dropdown">&#8964;</span></div>
-            <ul class="item-dropdown">
-                <li>Sikca Sorulan Sorular</li>
-                <li>Sikca Sorulan Sorular</li>
-                <li>Sikca Sorulan Sorular</li>
-                <li>Sikca Sorulan Sorular</li>
-                <li>Sikca Sorulan Sorular</li>
-                <li>Sikca Sorulan Sorular</li>
-                <li>Sikca Sorulan Sorular</li>
-            </ul>
-            <hr>
-        </div>
+<div class="box-moreinfo">
+    <div class="footer-dropdown">
+        <hr>
+        <div class="name-dropdown">YARDIM VE DESTEK <span id="sign-dropdown">&#8964;</span></div>
+        <ul class="item-dropdown">
+            <li>Sikca Sorulan Sorular</li>
+            <li>Sikca Sorulan Sorular</li>
+            <li>Sikca Sorulan Sorular</li>
+            <li>Sikca Sorulan Sorular</li>
+            <li>Sikca Sorulan Sorular</li>
+            <li>Sikca Sorulan Sorular</li>
+            <li>Sikca Sorulan Sorular</li>
+        </ul>
+        <hr>
     </div>
+
+    <div class="footer-dropdown">
+
+        <div class="name-dropdown">YARDIM VE DESTEK <span id="sign-dropdown">&#8964;</span></div>
+        <ul class="item-dropdown">
+            <li>Sikca Sorulan Sorular</li>
+            <li>Sikca Sorulan Sorular</li>
+            <li>Sikca Sorulan Sorular</li>
+            <li>Sikca Sorulan Sorular</li>
+            <li>Sikca Sorulan Sorular</li>
+            <li>Sikca Sorulan Sorular</li>
+            <li>Sikca Sorulan Sorular</li>
+        </ul>
+        <hr>
+    </div>
+
+    <div class="footer-dropdown">
+
+        <div class="name-dropdown">YARDIM VE DESTEK <span id="sign-dropdown">&#8964;</span></div>
+        <ul class="item-dropdown">
+            <li>Sikca Sorulan Sorular</li>
+            <li>Sikca Sorulan Sorular</li>
+            <li>Sikca Sorulan Sorular</li>
+            <li>Sikca Sorulan Sorular</li>
+            <li>Sikca Sorulan Sorular</li>
+            <li>Sikca Sorulan Sorular</li>
+            <li>Sikca Sorulan Sorular</li>
+        </ul>
+        <hr>
+    </div>
+
+    <div class="footer-dropdown">
+
+        <div class="name-dropdown">YARDIM VE DESTEK <span id="sign-dropdown">&#8964;</span></div>
+        <ul class="item-dropdown">
+            <li>Sikca Sorulan Sorular</li>
+            <li>Sikca Sorulan Sorular</li>
+            <li>Sikca Sorulan Sorular</li>
+            <li>Sikca Sorulan Sorular</li>
+            <li>Sikca Sorulan Sorular</li>
+            <li>Sikca Sorulan Sorular</li>
+            <li>Sikca Sorulan Sorular</li>
+        </ul>
+        <hr>
+    </div>
+
+    <div class="footer-dropdown">
+
+        <div class="name-dropdown">YARDIM VE DESTEK <span id="sign-dropdown">&#8964;</span></div>
+        <ul class="item-dropdown">
+            <li>Sikca Sorulan Sorular</li>
+            <li>Sikca Sorulan Sorular</li>
+            <li>Sikca Sorulan Sorular</li>
+            <li>Sikca Sorulan Sorular</li>
+            <li>Sikca Sorulan Sorular</li>
+            <li>Sikca Sorulan Sorular</li>
+            <li>Sikca Sorulan Sorular</li>
+        </ul>
+        <hr>
+    </div>
+
+    <div class="footer-dropdown">
+
+        <div class="name-dropdown">YARDIM VE DESTEK <span id="sign-dropdown">&#8964;</span></div>
+        <ul class="item-dropdown">
+            <li>Sikca Sorulan Sorular</li>
+            <li>Sikca Sorulan Sorular</li>
+            <li>Sikca Sorulan Sorular</li>
+            <li>Sikca Sorulan Sorular</li>
+            <li>Sikca Sorulan Sorular</li>
+            <li>Sikca Sorulan Sorular</li>
+            <li>Sikca Sorulan Sorular</li>
+        </ul>
+        <hr>
+    </div>
+
+
+</div> <!-- end box-moreinfo -->
+<script type="text/javascript">
+    require(['jquery', 'jquery/ui'], function($){
+        jQuery(document).ready( function() {
+            $('.item-dropdown').slideUp();
+            $('.name-dropdown').click(function(event) {
+                /* Act on the event */
+                console.log('ok')
+                $('.item-dropdown').slideUp();
+                $('.name-dropdown').removeClass('change-background');
+                $(this).toggleClass('change-background');
+
+                //khi click thì nội dung hiện ra
+                $(this).next().slideToggle(1000,"easeOutExpo");
+
+                //để khi clik vào nội dung sổ xuống đồng thời body cũng trươt lên 1 đoạn
+                $('html,body').animate({scrollTop:$(this).offset().top})
+            });
+        });
+    });
+</script>
+    <div class="select-lorem">
+        <div class="select-lorem-box">
+            <div class="select-lorem-title">LOREM IPSUM</div>
+            <ul class="lorem-ipsum">
+                <li>Nam dapibus</li>
+                <li>Mauris non risus</li>
+                <li>Aebeab at</li>
+                <li>Integer imperdiet</li>
+                <li>Nulla id tortor</li>
+                <li>Curabitur faucibus</li>
+                <li>Nam dapibus</li>
+                <li>Mauris non risus</li>
+                <li>Integer imperdiet</li>
+                <li>Nulla id tortor</li>
+                <li>Nam dapibus</li>
+                <li>Aebeab at</li>
+            </ul>
+        </div>
+
+        <div class="select-lorem-box">
+            <div class="select-lorem-title">LOREM IPSUM</div>
+            <ul class="lorem-ipsum">
+                <li>Nam dapibus</li>
+                <li>Mauris non risus</li>
+                <li>Aebeab at</li>
+                <li>Integer imperdiet</li>
+                <li>Nulla id tortor</li>
+                <li>Curabitur faucibus</li>
+                <li>Nam dapibus</li>
+                <li>Mauris non risus</li>
+                <li>Integer imperdiet</li>
+                <li>Nulla id tortor</li>
+                <li>Nam dapibus</li>
+                <li>Aebeab at</li>
+            </ul>
+        </div>
+
+        <div class="select-lorem-box">
+            <div class="select-lorem-title">LOREM IPSUM</div>
+            <ul class="lorem-ipsum">
+                <li>Nam dapibus</li>
+                <li>Mauris non risus</li>
+                <li>Aebeab at</li>
+                <li>Integer imperdiet</li>
+                <li>Nulla id tortor</li>
+                <li>Curabitur faucibus</li>
+                <li>Nam dapibus</li>
+                <li>Mauris non risus</li>
+                <li>Integer imperdiet</li>
+                <li>Nulla id tortor</li>
+                <li>Nam dapibus</li>
+                <li>Aebeab at</li>
+            </ul>
+        </div>
+
+        <div class="select-lorem-box">
+            <div class="select-lorem-title">LOREM IPSUM</div>
+            <ul class="lorem-ipsum">
+                <li>Nam dapibus</li>
+                <li>Mauris non risus</li>
+                <li>Aebeab at</li>
+                <li>Integer imperdiet</li>
+                <li>Nulla id tortor</li>
+                <li>Curabitur faucibus</li>
+                <li>Nam dapibus</li>
+                <li>Mauris non risus</li>
+                <li>Integer imperdiet</li>
+                <li>Nulla id tortor</li>
+                <li>Nam dapibus</li>
+                <li>Aebeab at</li>
+            </ul>
+        </div>
+
+    </div><!--  end select lorem -->
+
+<?= $block->getChildHtml('select_language', false); ?>
+
+
 
     <script type="text/javascript">
         require(['jquery', 'jquery/ui'], function($){
             jQuery(document).ready( function() {
-                $('.item-dropdown').slideUp();
-                $('.name-dropdown').click(function(event) {
-                    /* Act on the event */
-                    console.log('ok')
-                    $('.item-dropdown').slideUp();
-                    $(this).toggleClass('xanh');
+                $('.selected').click(function(event) {
 
-                    //khi click thì nội dung hiện ra
-                    $(this).next().slideToggle(1000,"easeOutExpo");
-
-                    //để khi clik vào nội dung sổ xuống đồng thời body cũng trươt lên 1 đoạn
-                    $('html,body').animate({scrollTop:$(this).offset().top})
+                    $('ul#country-drop').slideToggle();
                 });
+
+                $('ul#country-drop li .one-country').click(function(event) {
+
+                    var a = $(this).html();
+                    console.log(a);
+                    $('.selected').html(a +"<i class=\"fas fa-caret-down\"></i>" );
+                    $('ul#country-drop').slideUp();
+                });
+
             });
         });
     </script>
+
+</div> <!-- end country -->
+    <hr>
+<div class="takip-edin">
+        <div class="takip-title">Bizi takip edin</div>
+        <img  src="<?php echo $this->getViewFileUrl('images/item21.png'); ?>" alt="">
+ </div> <!-- end takip-edin -->
+
+</div><!--  end country-taki -->
+
+<hr>
+
+<div class="partner-logo-mobile">
+    <img  src="<?php echo $this->getViewFileUrl('images/partner-logo1.png'); ?>" alt="">
+    <img  src="<?php echo $this->getViewFileUrl('images/partner-logo2.png'); ?>" alt="">
 </div>
+
+<div class="partner-logo-desktop">
+    <img  src="<?php echo $this->getViewFileUrl('images/partner-logo/GIA_black.png'); ?>" alt="">
+    <img  src="<?php echo $this->getViewFileUrl('images/partner-logo/HRD_black.png'); ?>" alt="">
+    <img  src="<?php echo $this->getViewFileUrl('images/partner-logo/VISA_black.png'); ?>" alt="">
+    <img  src="<?php echo $this->getViewFileUrl('images/partner-logo/MASTERCARD_black.png'); ?>" alt="">
+    <img  src="<?php echo $this->getViewFileUrl('images/partner-logo/MAESTRO_black.png'); ?>" alt="">
+    <img  src="<?php echo $this->getViewFileUrl('images/partner-logo/AMERICANEXPRESS_black.png'); ?>" alt="">
+    <img  src="<?php echo $this->getViewFileUrl('images/partner-logo/PAYPAL_black.png'); ?>" alt="">
+    <img  src="<?php echo $this->getViewFileUrl('images/partner-logo/PAYMENTMETHODS_black.png'); ?>" alt="">
+</div>
+<div class="copyright">
+    Copyright © 2018 GALAPEL. All rights reserved.
+</div>
+
+
+<!--JGKSJDHFGKSHDKFJG-->
+
+
+<form class="form-horizontal">
+    <div class="form-group">
+        <label>Select Country</label><br>
+        <div id="options"></div>
+    </div>
+</form>
+
+<script type="text/javascript">
+    require(['jquery', 'flagtrap'], function($){
+        jQuery(document).ready( function() {
+            $('#options').flagStrap({
+                countries: {
+                    "AU": "Australia",
+                    "GB": "United Kingdom",
+                    "US": "United States"
+                },
+                buttonSize: "btn-sm",
+                buttonType: "btn-info",
+                labelMargin: "10px",
+                scrollable: false,
+                scrollableHeight: "350px"
+            });
+        });
+    });
+</script>

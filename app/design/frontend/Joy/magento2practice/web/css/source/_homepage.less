@@ -12,27 +12,70 @@
     font-size: @four;
   }
 }
+@media(min-width: 768px) {
+  .navigation, .breadcrumbs,
+  .page-header .header.panel,
+  .header.content, .footer.content,
+  .page-wrapper > .widget,
+  .page-wrapper > .page-bottom, .block.category.event,
+  .top-container, .page-main {
+  max-width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.sections.nav-sections {
+  margin: 0;
+}
+.banner-desktop {
+  display: none;
+  @media(min-width: 768px) {
+    display: block;
+    position: relative;
+    .banner-desktop-text {
+      width: 538px;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    .text-title {
+      font-weight: 600;
+    }
+
+    .text-content {
+      font-size: 20px;
+      padding: 20px 0;
+    }
+
+    .banner-desktop-button {
+      width: 100%;
+      text-align: center;
+      background: blue;
+    }
+
+    .banner-desktop-button a {
+      color: white;
+    }
+
+  }
+
+}
 
 .column.main{
   .mixin();
-  //@media (min-width:460px) {
-  //  font-size: 21px;
-  //}
-  //@media (min-width:540px) {
-  //  font-size: 23px;
-  //}
-  //@media (min-width:620px) {
-  //  font-size: 28px;
-  //}
-  //@media (min-width:700px) {
-  //  font-size: 31px;
-  //}
+
   p {
     margin-bottom: 0;
   }
 }
 .banner-mobile {
   position: relative;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
   .discount-banner, .title-banner, a.category-button {
     position: absolute;
     width: 100%;
