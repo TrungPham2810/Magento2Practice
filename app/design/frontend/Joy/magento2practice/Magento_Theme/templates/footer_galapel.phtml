@@ -266,32 +266,3 @@
     Copyright © 2018 GALAPEL. All rights reserved.
 </div>
 
-
-<!--JGKSJDHFGKSHDKFJG-->
-
-
-<form class="form-horizontal">
-    <div class="form-group">
-        <label>Select Country</label><br>
-        <div id="options"></div>
-    </div>
-</form>
-
-<script type="text/javascript">
-    require(['jquery', 'flagtrap'], function($){
-        jQuery(document).ready( function() {
-            $('#options').flagStrap({
-                countries: {
-                    "AU": "Australia",
-                    "GB": "United Kingdom",
-                    "US": "United States"
-                },
-                buttonSize: "btn-sm",
-                buttonType: "btn-info",
-                labelMargin: "10px",
-                scrollable: false,
-                scrollableHeight: "350px"
-            });
-        });
-    });
-</script>

@@ -32,10 +32,13 @@
                     <?php if ($_lang->getId() != $block->getCurrentStoreId()): ?>
                         <li>
                             <div class="one-country">
-                                <img src=<?php echo $this->getViewFileUrl('images/item19.png'); ?>>
-                                <a class="name-country" href="#" data-post='<?= /* @noEscape */ $block->getTargetStorePostData($_lang) ?>'>
+                                <img src=<?php echo $this->getViewFileUrl("images/{$_lang->getCode()}.png"); ?>>
+                                <span class="name-country">
+                                    <a  href="#" data-post='<?= /* @noEscape */ $block->getTargetStorePostData($_lang) ?>'>
                                 <?= $block->escapeHtml($_lang->getName()) ?>
                             </a>
+                                </span>
+                                
                             </div>
                             
                         </li>
