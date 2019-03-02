@@ -1,4 +1,4 @@
-.mixin(@one:16px, @two:19px, @three:22px, @four:19px) {
+.mixin(@one:16px, @two:19px, @three:22px, @four:17px) {
   @media (min-width:@screen__xs) {
     font-size: @one;
   }
@@ -261,7 +261,7 @@ LESS FOR NEDEN GALAPEL
     .icon-neden.fas {
       font-weight: 900;
       font-size: 4em;
-      padding:0 0 0 15px
+      padding:0 0 0 15px;
       color:#4894d1;
 
       @media (min-width: @screen__xl) {
@@ -348,7 +348,7 @@ img.product-image-photo {
 }
 
 span.product-image-container {
-  width: 300px;
+  width: 300px !important;
 }
 span.product-image-wrapper {
   padding-bottom: 100% !important;
@@ -363,18 +363,17 @@ BLOG PRODUCT
 =======================*/
 .blog-product {
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
 
-  @media (min-width: @screen__l) {
-    display: flex;
-
+  @media (min-width: @screen__m) {
     .box-blog {
         width: 31%;
         margin: 0 1%;
-
-      .fas.fa-caret-right {
-        color: #4894d1;
-      }
     }
+  }
+  .fas.fa-caret-right {
+    color: #4894d1;
   }
   .title-blog {
     font-weight: 600;
