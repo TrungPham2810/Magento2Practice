@@ -142,7 +142,10 @@ a.category-button {
   }
 
   .label-text {
-    margin: 0 8px;
+    margin: 0 5px 0 8px;
+    img.icon-g {
+      width: 22px;
+    }
   }
   .introduce-category {
     margin-bottom: 20px;
@@ -274,6 +277,10 @@ a.product-item-link:hover {
 
 .column.main li.product-item {
   width: 300px;
+  @media (min-width: 1024px) {
+    width: 23%;
+    margin: 0 1%;
+  }
 
   .product-item-info {
     text-align: center;
@@ -335,33 +342,65 @@ BLOG PRODUCT
 /*=======================
 GALAPEL YORUMLAR
 =======================*/
+
+
 .boxs-total {
-  .mixin(@one:21px, @two:21px, @three:23px, @four:23px);
+  .mixin(@one:16px, @two:16px, @three:17px, @four:19px);
 
-  overflow: scroll;
-  width: 100%;
+  .owl-nav {
+    display: none;
 
-  .boxs-content {
-    display: flex;
-    width: 1100px;
+    @media (min-width: 768px) {
+      display: block;
+      position: absolute;
+      top: 40%;
+      color: red;
+      width: 100%;
 
-    .box-yorumlar {
-      text-align: center;
-      margin: 0 22px;
-
-      .name-yorumlar {
-        font-weight: 600;
-        margin-top: 10px;
-        font-weight: bold;
+      span {
+        font-size: 30px;
       }
+    }
 
-      .content-yorumlar {
-        margin-bottom: 20px;
-      }
+  }
+
+  button.owl-next {
+    float: right;
+  }
+
+  .box-yorumlar2 {
+    text-align: center;
+    margin: 0 22px;
+
+    .name-yorumlar2 {
+      font-weight: 600;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .content-yorumlar2 {
+      margin-bottom: 20px;
     }
   }
 }
-
-.next, .previous {
-  display: none;
-}
+//  .boxs-content {
+//    .box-yorumlar {
+//      text-align: center;
+//      margin: 0 22px;
+//
+//      .name-yorumlar {
+//        font-weight: 600;
+//        margin-top: 10px;
+//        font-weight: bold;
+//      }
+//
+//      .content-yorumlar {
+//        margin-bottom: 20px;
+//      }
+//    }
+//  }
+//}
+//
+//.next, .previous {
+//  display: none;
+//}

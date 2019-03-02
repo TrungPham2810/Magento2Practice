@@ -123,16 +123,16 @@
             $('.item-dropdown').slideUp();
             $('.name-dropdown').click(function(event) {
                 /* Act on the event */
-                console.log('ok')
-                $('.item-dropdown').slideUp();
-                $('.name-dropdown').removeClass('change-background');
-                $(this).toggleClass('change-background');
+                // console.log('ok')
+                // $('.item-dropdown').slideUp();
+                // $('.name-dropdown').removeClass('change-background');
+                // $(this).toggleClass('change-background');
 
                 //khi click thì nội dung hiện ra
                 $(this).next().slideToggle(1000,"easeOutExpo");
 
                 //để khi clik vào nội dung sổ xuống đồng thời body cũng trươt lên 1 đoạn
-                $('html,body').animate({scrollTop:$(this).offset().top})
+                // $('html,body').animate({scrollTop:$(this).offset().top})
             });
         });
     });
@@ -231,7 +231,6 @@
                     $('.selected').html(a +"<i class=\"fas fa-caret-down\"></i>" );
                     $('ul#country-drop').slideUp();
                 });
-
             });
         });
     </script>
