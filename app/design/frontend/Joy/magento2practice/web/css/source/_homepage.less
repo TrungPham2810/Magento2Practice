@@ -25,6 +25,10 @@
   }
 }
 
+div#switcher-language {
+    display: none;
+}
+
 main#maincontent {
   padding-left: 0;
   padding-right: 0;
@@ -38,31 +42,59 @@ main#maincontent {
 .sections.nav-sections {
   margin: 0;
 }
+
+/*=======================
+BANNER DESKTOP 
+=======================*/
 .banner-desktop {
   display: none;
-  @media(min-width: 768px) {
+  .banner-desktop-text {
+      width: 27%;
+      position: absolute;
+      top: 8%;
+      right: 14%;
+      font-size: 13px;
+    }
+  @media(min-width:@screen__m) {
     display: block;
     position: relative;
     .banner-desktop-text {
-      width: 538px;
-      position: absolute;
-      top: 0;
-      right: 0;
+      top: 15%;
+      right: 14%;
     }
+
+  @media (min-width: @screen__l) {
+      .banner-desktop-text {
+      font-size: 20px;
+      width: 30%;
+      right: 10%;
+    }
+  }
+
+  @media (min-width: @screen__xxl) {
+      .banner-desktop-text {
+      font-size: 27px;
+      width: 30%;
+      right: 10%;
+    }
+  }
 
     .text-title {
       font-weight: 600;
+      font-size: 1.5em;
     }
 
     .text-content {
-      font-size: 20px;
+      font-size: ;
       padding: 20px 0;
     }
 
     .banner-desktop-button {
       width: 100%;
       text-align: center;
-      background: blue;
+      padding: 5px 0;
+    border-radius: 3px;
+      background: #4894d1;
     }
 
     .banner-desktop-button a {
@@ -73,6 +105,9 @@ main#maincontent {
 
 }
 
+/*=======================
+BANNER MOBILE
+=======================*/
 .column.main{
   .mixin();
 
@@ -130,11 +165,16 @@ a.category-button {
   border-radius: 2px;
 }
 
+
+/*=======================
+CATEGORY 
+=======================*/
 .box-category {
   width: 100%;
   text-align: center;
   padding-bottom: 50px;
   color: #343434;
+
   .name-category {
     font-size: 1.3em;
     font-weight: 600;
@@ -167,42 +207,128 @@ a.category-button {
     //color: #343434
   }
 }
-.box-category:nth-child(2) {
-  background: #f4f4f4;
+@media(min-width: @screen__m) {
+
+  .category-homepage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+
+  .box-category:nth-child(2), .box-category:nth-child(1) {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    .image-box-category {
+    width: 50%;
+  }
+
+  .content-box-category {
+      width: 50%;
+  }
+  } 
+
+  .box-category:nth-child(2) {
+  background: #f4f4f4;
+  padding: 50px 60px;
+}
+
+  .box-category:nth-child(1) {
+    flex-flow: row-reverse;
+  }
+  
+  
+}
+
+
 .box-category:nth-child(3) {
-  margin-top: 47px;
+  width: 100%;
+  margin-top: 45px;
+  height: 29.5em;
+  @media (min-width: 700px) {
+    height: 37.5em;
+  }
   position:relative;
   overflow: hidden;
-  height: 30.5em;
+  // height: 30.5em;
   background: #f8f8f8;
+
   img {
-    transform: scale(2.2) translateY(32px);
+    -webkit-transform: scale(2.2) translateY(32px);
+       -moz-transform: scale(2.2) translateY(32px);
+        -ms-transform: scale(2.2) translateY(32px);
+         -o-transform: scale(2.2) translateY(32px) ;
+            transform: scale(2.2) translateY(32px) ; 
   }
-  .label-homepage,.name-category, .introduce-category ,a.category-button{
+  .content-box-category{
     position: absolute;
-    bottom: 0;
+    bottom: 20px;
     width: 100%;
     text-align: center;
   }
-  .name-category{
-    top:62%;
-    font-weight: 600;
-  }
 
-  .label-homepage {
-    top: 42%;
-  }
-
-  .introduce-category {
-    bottom:15%;
-  }
-  a.category-button {
-  width: 70%;
-    left: 15%;
-    bottom:8%;
+  @media (min-width:@screen__m){   
+  
+    width: 44%;
+    margin-left: 3%;
+    margin-right: 3%;
+   img {
+    -webkit-transform: scale(1.8) translateY(30px) translateX(15px);
+       -moz-transform: scale(1.8) translateY(30px) translateX(15px);
+        -ms-transform: scale(1.8) translateY(30px) translateX(15px);
+         -o-transform: scale(1.8) translateY(30px) translateX(15px);
+            transform: scale(1.8) translateY(30px) translateX(15px);
+   }
   }
 }
+
+.box-category:nth-child(4) {
+  width: 100%;
+  @media (min-width: @screen__m){
+    width: 43%;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 45px;
+    border: 1px solid #dadada;
+    position:relative;
+
+    .content-box-category{
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  }
+}
+
+.box-category:nth-child(3), .box-category:nth-child(4) {
+ max-width: 800px;
+ // max-height: 600px;
+  @media(min-width: @screen__m){
+
+      height: 24.5em;
+  }
+
+  @media(min-width: 900px){
+  //   
+      height: 26.5em;
+  }
+
+@media (min-width:@screen__l) {
+      height: 29.5em;
+  } 
+
+  @media (min-width:@screen__lg) {
+      height: 32.5em;
+  } 
+  @media (min-width:@screen__xl) {
+      height: 34.5em;
+  } 
+  @media (min-width:@screen__xxl) {
+      max-width: 700px;
+  } 
+}
+
 
 /*=======================
 LESS FOR NEDEN GALAPEL
@@ -309,9 +435,29 @@ DIGER KATEGORILER
 
 }
 
+.products-grid.grid {
+  @media (min-width: @screen__m) {
+    width: 90%;
+    margin: auto;
+
+  }
+
+  @media (min-width: @screen__xxl) {
+    width: 1600px; 
+  }
+
+
+    
+}
 ol.product-items {
   display: flex;
   overflow: scroll;
+  @media (min-width: @screen__m) {
+    overflow: unset;
+    justify-content: center;
+    margin: auto;
+  }
+
 }
 span.product-image-container {
   background: #fafafa;
@@ -322,8 +468,8 @@ a.product-item-link:hover {
 
 .column.main li.product-item {
   width: 300px;
-  @media (min-width: 1024px) {
-    width: 23% !important;
+  @media (min-width: @screen__l) {
+    width: 20% !important;
     margin: 0 1%;
   }
 
@@ -367,11 +513,18 @@ BLOG PRODUCT
   flex-wrap: wrap;
 
   @media (min-width: @screen__m) {
+      width: 90%;
+    margin: auto;
     .box-blog {
         width: 31%;
         margin: 0 1%;
     }
   }
+
+  @media (min-width: @screen__xxl) {
+    width: 1600px; 
+  }
+
   .fas.fa-caret-right {
     color: #4894d1;
   }
