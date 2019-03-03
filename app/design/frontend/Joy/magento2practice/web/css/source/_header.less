@@ -5,11 +5,11 @@ body {
     border-bottom: unset;
     margin-bottom: unset;
 
-    &:after {
-    content: unset !important;
-}
 }
 
+.panel.header:after {
+    content: unset !important;
+}
 a.level-top {
     color: #c9c9c9 !important;
 }
@@ -24,20 +24,15 @@ a.level-top {
   }
 }
 
-
-.block-search {
+.header.panel > .header.links {
   @media (min-width: @screen__m) {
-    padding-left: 0;
-
-    .action.search:before {
-      font-size: 25px;
-      color: black;
-      transform: translateY(10px);
+    // width: 300px;
+    li {
+        font-size: 10px;
     }
   }
-
-
 }
+
 ul.header.links {
   margin: 0;
   padding: 0;
