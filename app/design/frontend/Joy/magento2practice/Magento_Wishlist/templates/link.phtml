@@ -11,7 +11,8 @@
 <li class="link wishlist" data-bind="scope: 'wishlist'">
     <a <?= /* @noEscape */ $block->getLinkAttributes() ?>>
         <span class="wishlist-content">
-                <?= $block->escapeHtml($block->getLabel()) ?>
+                <!-- <?= $block->escapeHtml($block->getLabel()) ?> -->
+                Begendiklerim
         </span>
         <!-- ko if: wishlist().counter -->
         <span data-bind="text: wishlist().counter" class="counter qty"></span>
