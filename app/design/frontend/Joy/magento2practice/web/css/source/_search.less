@@ -8,7 +8,22 @@ input#search:focus {
   box-shadow: none;
 }
 
-.block-search .label {
+.block-search {
+		.label {
   position: absolute;
   left: 50px;
+}
+  @media (min-width: @screen__m) {
+    padding-left: 0;
+        width: 200px;
+	
+
+    .action.search:before {
+      font-size: 25px;
+      color: black;
+      transform: translateY(10px);
+    }
+  }
+
+
 }
