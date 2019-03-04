@@ -197,20 +197,50 @@ SELECT LOREM
 SELECT COUNTRY
 =======================*/
 
+
+
+.country-edin {
+  background: #f4f4f4;
+  @media(min-width: @screen__m) {
+    display: flex;
+    flex-flow: row-reverse;
+    border-top: 1px solid #d1d1d1;
+    padding: 0 5%;
+
+    .country-takip {
+      width: 50%;
+      border-bottom: unset;
+    }
+
+    .takip-edin {
+      width: 50%;
+    }
+  }
+
+
+}
+
+.country-takip {
+  border-bottom: 1px solid #d1d1d1;
+}
 .country {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  background: #f4f4f4;
+  //background: #f4f4f4;
   padding: 25px 0px;
 
   .image-world {
     width: 30%;
+
+    @media(min-width:@screen__m) {
+      width: 130px;
+    }
   }
 
   .country-select {
-    width: 220px;
+    width: 170px;
     margin-left: 5%;
 
     .title-country-select {
@@ -231,7 +261,7 @@ SELECT COUNTRY
 
         span.name-country  {
           margin-left: 10px;
-          font-size: 16px;
+          font-size: 13px;
           vertical-align: middle;
           font-weight: 500;
           color: #727272;
@@ -247,7 +277,7 @@ SELECT COUNTRY
 
 ul#country-drop {
   position: absolute;
-  width: 220px;
+  width: 170px;
   z-index: 1000;
 }
 
@@ -268,7 +298,7 @@ TAKIP EDIN
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #f4f4f4;
+  //background: #f4f4f4;
   padding: 30px 0;
 
 

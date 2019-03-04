@@ -1,7 +1,9 @@
 .block-search input {
   border: 0px solid;
   border-bottom: 1px solid;
-  transform: translateX(5px);
+
+
+
 }
 
 input#search:focus {
@@ -9,7 +11,10 @@ input#search:focus {
 }
 
 .block-search {
-		.label {
+  @media(min-width: @screen__lg) {
+    transform: translateX(8px);
+  }
+  .label {
   position: absolute;
   left: 50px;
 }
@@ -24,6 +29,8 @@ input#search:focus {
       transform: translateY(10px);
     }
   }
+}
 
-
+button.action.search {
+  opacity: 1;
 }

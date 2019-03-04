@@ -22,7 +22,12 @@
         <div class="title-country-select">Ulkenize Secin</div>
        
         <div class="selected"> <i class="fas fa-caret-down"></i>
-            <img src=<?php echo $this->getViewFileUrl('images/item19.png'); ?>>
+           <!--  <img src=<?php echo $this->getViewFileUrl('images/item19.png'); ?>> -->
+                <?php foreach ($block->getStores() as $_lang): ?>
+                    <?php if ($_lang->getName() == $block->getStoreName()): ?>
+                                <img src=<?php echo $this->getViewFileUrl("images/{$_lang->getCode()}.png"); ?>>
+                    <?php endif; ?>
+                <?php endforeach; ?>
                     <span class="name-country"><?= $block->escapeHtml($block->getStoreName()) ?></span>
             </div>
 

@@ -25,9 +25,9 @@
   }
 }
 
-div#switcher-language {
-    display: none;
-}
+//div#switcher-language {
+//    display: none;
+//}
 
 main#maincontent {
   padding-left: 0;
@@ -85,7 +85,7 @@ BANNER DESKTOP
     }
 
     .text-content {
-      font-size: ;
+      font-size: 12px;
       padding: 20px 0;
     }
 
@@ -336,7 +336,10 @@ LESS FOR NEDEN GALAPEL
 
 .neden_galapel {
   background: #f8f8f8;
-  padding: 15px 15px 0 15px;
+  padding: 15px 5% 0 5%;
+@media (min-width: @screen__xxl) {
+  width: 1600px;
+}
 
 }
 
@@ -377,11 +380,13 @@ LESS FOR NEDEN GALAPEL
       font-size: 15px;
     }
 
-    @media (min-width: @screen__xl) {
+    @media (min-width: @screen__l) {
       width: 33%;
       font-size: 15px;
       flex-wrap: inherit;
       text-align: center;
+
+
 
     }
     .icon-neden.fas {
@@ -390,7 +395,7 @@ LESS FOR NEDEN GALAPEL
       padding:0 0 0 15px;
       color:#4894d1;
 
-      @media (min-width: @screen__xl) {
+      @media (min-width: @screen__l) {
         margin: auto;
       }
     }
@@ -469,7 +474,7 @@ a.product-item-link:hover {
 .column.main li.product-item {
   width: 300px;
   @media (min-width: @screen__l) {
-    width: 20% !important;
+    width: 21% !important;
     margin: 0 1%;
   }
 
@@ -507,6 +512,9 @@ a:hover {
 /*=======================
 BLOG PRODUCT
 =======================*/
+.homepage-product-list {
+
+
 .blog-product {
   text-align: center;
   display: flex;
@@ -548,7 +556,7 @@ BLOG PRODUCT
     }
   }
 }
-
+} //end class homepage-product-list
 /*=======================
 GALAPEL YORUMLAR
 =======================*/
